@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get High</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style-menu.css">
+    <link rel="stylesheet" href="estilos/style-main.css">
 </head>
 <body>
-    <section class="content">
-        <header class="esquerda">
+    <section class="content-main">
+        <header class="esquerda-main">
             <nav class="menu">
                 <span class="menu-item">
                     <a href="#main">
@@ -31,32 +33,67 @@
                 </span>
 
                 <span class="menu-item" id="logoff">
-                    <a href="">Log off</a>
+                    <a href="login.html">Log off</a>
                 </span>
             </nav>
         </header>
-        <div class="direita">
+        <div class="direita-main">
             <section id="main">
                 <h1>Main</h1>
                 <hr>
-                <div class="main-botoes">
-                    <ul>
-                        <li><a href="">Cadastrar pacote</a></li>
-                        <li><a href="">Cadastrar viagem</a></li>
-                        <li><a href="">Cadastrar hospedagem</a></li>
-                    </ul>
-                </div>
-                <div class="main-pesquisa">
-                    <div class="botao-pesquisa">
-                        <a href="#pesquisar">Pesquisar</a>
+                <section class="main-content">
+                    <div class="main-botoes">
+                        <ul>
+                            <li><a href="">Cadastrar pacote</a></li>
+                            <li><a href="">Cadastrar viagem</a></li>
+                            <li><a href="">Cadastrar hospedagem</a></li>
+                        </ul>
                     </div>
+                    <a href="#pesquisa" id="pesquisar">
+                        Pesquisa
+                    </a>
                     <div id="pesquisa">
+                        <a href="#" class="pesquisa-btn">Viagem</a>
+                        <a href="#" class="pesquisa-btn">Hospedagem</a>
                     </div>
-                </div>
+                </section>
             </section>
             <section id="funcionarios">
+                <h1>Funcionários</h1>
+                <hr>
+                <section class="main-content">
+                    <div class="main-botoes">
+                        <ul>
+                            <li><a href="#">Cadastrar funcionário</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Pesquisar</h4>
+                        <p>Informe o nome ou o códido de indentificação</p>
+                        <form action="">
+                            <div class="fieldset">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome">
+                            </div>
+                            <div class="fieldset">
+                                <label for="codigo">Código de indentificação</label>
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </section>
             <section id="relatorios">
+                <h1>Relatórios</h1>
+                <hr>
+                <section class="main-content">
+                    <div class="main-botoes">
+                        <ul>
+                            <li><a href="">Relatório Mensal</a></li>
+                            <li><a href="">Relatório Anual</a></li>
+                        </ul>
+                    </div>
+                </section>
             </section>
         </div>
     </section>
