@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* main */
+.content-main {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+header.esquerda-main {
+    width: 20%;
+    height: 94vh;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+div.direita-main {
+    width: 78%;
+    height: 94vh;
+    flex-shrink: 1;
+    padding: 20px;
+    background-color: var(--cor-fundo-content);
+}
+
+div.direita-main > #main > h1 {
+    font-size: 1.5em;
+}
+
+div.direita-main > #main > hr {
+    margin: 8px 0 2em 0;
+}
+
+div.direita-main > #main > .main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* fim main*/

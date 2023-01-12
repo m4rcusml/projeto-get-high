@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* geral */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,82 +14,57 @@
     --cor-botao-discreto: #9788C8;
     --cor-textfield: #1F1151;
     --cor-botao-forte: #FFB20F;
+    --cor-botao-forte-clicado: #9b6d0a;
 }
-/* geral */
+
 body {
     height: 100vh;
     background-color: var(--cor-fundo);
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-a:active {
     color: var(--cor-botao-discreto);
 }
 
-.content {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: flex;
+a:hover {
+    text-decoration: underline;
 }
 
-.esquerda, .direita {
-    display: inline-block;
+a:active {
+    color: var(--cor-fundo);
 }
 
-.esquerda {
-    width: 20%;
-    height: 94vh;
-    margin-right: 20px;
+input {
+    background-color: var(--cor-textfield);
+    border: none;
+    color: rgba(255, 255, 255, 0.644);
+    padding-left: 1em;
 }
 
-.direita {
-    width: 78%;
-    height: 94vh;
-}
-/* fim geral*/
-
-
-
-/* menu */
-.menu {
-    background-color: var(--cor-fundo-content);
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+input:focus {
+    outline: 3px solid var(--cor-fundo);
 }
 
-.menu > .menu-item {
-    height: 60px;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.menu > .menu-item:hover {
-    background-color: rgba(0, 0, 0, 0.164);
+button {
+    background-color: var(--cor-botao-forte);
+    border: none;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.menu > .menu-item:active {
-    background-color: rgba(0, 0, 0, 0.6);;
+button:active {
+    background-color: var(--cor-botao-forte-clicado);
 }
 
-.menu-item > a {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+ul {
+    list-style: '+ ' inside;
 }
 
-/* estilizar o botao de log off*/
+li {
+    margin-bottom: 4px;
+}
 
-/* fim menu */
+/* fim geral */
