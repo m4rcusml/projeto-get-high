@@ -53,13 +53,13 @@ body {
     text-align: center;
 }
 
-.direita-login > form > .fieldset-login {
+.direita-login > form > .fieldset {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.direita-login > form > .fieldset-login > input {
+.direita-login > form > .fieldset > input {
     height: 35px;
 }
 
