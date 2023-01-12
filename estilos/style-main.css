@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 /* main */
 .content-main {
     padding: 20px;
@@ -23,19 +25,85 @@ div.direita-main {
     background-color: var(--cor-fundo-content);
 }
 
-div.direita-main > #main > h1 {
+div.direita-main h1 {
     font-size: 1.5em;
 }
 
-div.direita-main > #main > hr {
+div.direita-main hr {
     margin: 8px 0 2em 0;
 }
 
-div.direita-main > #main > .main-content {
+#main > .main-content, #funcionarios > .main-content {
     display: flex;
     justify-content: space-between;
 }
 
+#pesquisar {
+    background-color: var(--cor-botao-forte);
+    position: fixed;
+    right: 50px;
+    align-self: flex-start;
+    width: 250px;
+    height: 48px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+#pesquisar:active {
+    background-color: var(--cor-botao-forte-clicado);
+}
 
+div#pesquisa {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all ease-in .1s;
+    opacity: 0;
+    height: 0;
+    top: 160px;
+}
+
+div#pesquisa button {
+    margin: 8px;
+    padding: 2px;
+    opacity: 0;
+}
+
+div#pesquisa:target {
+    opacity: 1;
+    height: 74px;
+}
+
+div#pesquisa:target button {
+    animation: .3s fadeIn forwards .3s;
+}
+
+.pesquisa-btn {
+    background-color: var(--cor-botao-forte);
+    color: black;
+    font-size: 14px;
+    padding: 2px 4px;
+    margin: 8px;
+}
+
+.pesquisa-btn:hover {
+    text-decoration: none;
+}
+
+.pesquisa-btn:focus {
+    background-color: var(--cor-botao-forte-clicado);
+}
+
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}
 /* fim main*/
