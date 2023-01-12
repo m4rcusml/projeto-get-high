@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 /* main */
 .content-main {
     padding: 20px;
@@ -40,12 +38,9 @@ div.direita-main hr {
 
 #pesquisar {
     background-color: var(--cor-botao-forte);
-    position: fixed;
-    right: 50px;
     align-self: flex-start;
     width: 250px;
     height: 48px;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,52 +53,72 @@ div.direita-main hr {
     background-color: var(--cor-botao-forte-clicado);
 }
 
-div#pesquisa {
+div.main-pesquisa {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    right: 50px;
     width: 250px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    transition: all ease-in .1s;
-    opacity: 0;
-    height: 0;
-    top: 160px;
+    align-items: stretch;
+    z-index: 10;
 }
 
-div#pesquisa button {
-    margin: 8px;
-    padding: 2px;
-    opacity: 0;
-}
-
-div#pesquisa:target {
-    opacity: 1;
-    height: 74px;
-}
-
-div#pesquisa:target button {
-    animation: .3s fadeIn forwards .3s;
-}
-
-.pesquisa-btn {
+div.main-pesquisa .pesquisa-btn {
     background-color: var(--cor-botao-forte);
     color: black;
-    font-size: 14px;
+    width: fit-content;
+    font-size: 16px;
+    margin: 0.5em 1em;
     padding: 2px 4px;
-    margin: 8px;
 }
 
-.pesquisa-btn:hover {
-    text-decoration: none;
+.funcionario-pesquisa, .main-pesquisa {
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    gap: 8px;
 }
 
-.pesquisa-btn:focus {
-    background-color: var(--cor-botao-forte-clicado);
+.funcionario-pesquisa h4, .main-pesquisa h4 {
+    background-color: var(--cor-botao-forte);
+    color: black;
+    text-align: center;
+    padding: 15px 0;
 }
 
-@keyframes fadeIn {
-    100% {opacity: 1;}
+.funcionario-pesquisa p {
+    font-size: 12px;
+    color: var(--cor-botao-discreto);
+    text-align: center;
 }
-/* fim main*/
+
+.funcionario-pesquisa form .fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 8px 0;
+}
+
+.funcionario-pesquisa form .fieldset input {
+    height: 30px;
+}
+
+
+/* interações */
+
+section#main, section#funcionarios, section#relatorios {
+    width: 72%;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+}
+
+section#main:target, section#funcionarios:target, section#relatorios:target {
+    background-color: var(--cor-fundo-content);
+    position: absolute;
+    opacity: 1;
+    z-index: 5;
+}
+
+/* fim interações */
