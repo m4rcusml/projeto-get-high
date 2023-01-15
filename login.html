@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Get High</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/login-style.css">
 </head>
 <body>
+    <section class="container">
+        <div id="img-bemvindo">
+            <h1>Bem-vindo(a) ao nosso time!</h1>
+            <img src="imagens/logo.png" alt="">
+        </div>
+        <div id="login-area">
+            <form action="index.html" id="login">
+                <h1>Login</h1>
+                <label for="user">Usuário</label>
+                <input type="text" id="user">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+                <button type="submit">Acessar</button>
+                <a href="#" id="esquecisenha">Esqueci meu código de acesso/senha</a>
+            </form>
+            <div id="recuperarconta">
+                <span>
+                    <button id="voltar">&lArr;</button>
+                    <h1>Login</h1>
+                </span>
+                <p>Por favor informe o email ou telefone registrado no ato de cadastro!</p>
+                <label for="recuperando">Email ou Telefone</label>
+                <input type="text" id="recuperando">
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('esquecisenha').addEventListener('click', esqueci)
+        document.querySelector('button#enviar').addEventListener('click', enviado)
+        document.getElementById('voltar').addEventListener('click', voltar)
+
+        function esqueci() {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('recuperarconta').style.display = 'flex';
+        }
+
+        function voltar() {
+            document.getElementById('login').style.display = '';
+            document.getElementById('login').style.display = '';
+        }
+
+        function enviado() {
+            document.getElementById('voltar').style.display = 'inline';
+        }
     
+    </script>
 </body>
 </html>
