@@ -10,10 +10,14 @@
     --cor-fundo: #0B0816;
     --cor-fundo-content: #140F29;
     --cor-botao-discreto: #9788C8;
-    --cor-botao-discreto-clicado: #655b88;
+    --cor-botao-discreto-clicado: #261c4a;
     --cor-textfield: #1F1151;
     --cor-botao-forte: #FFB20F;
     --cor-botao-forte-clicado: #9b6d0a;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -22,6 +26,7 @@ body {
     padding: 2vh 1vw;
     background-color: var(--cor-fundo);
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -45,7 +50,7 @@ a:active {
 }
 
 button {
-    height: 30px;
+    height: 3rem;
     cursor: pointer;
     outline: none;
     border: none;
@@ -57,11 +62,11 @@ button:active {
     background-color: var(--cor-botao-forte-clicado);
 }
 
-input {
+input, textarea {
     color: rgba(255, 255, 255, 0.7);
-    height: 30px;
+    height: 3rem;
     background-color: var(--cor-textfield);
     border: none;
     outline: none;
-    padding-left: 1em;
+    padding-left: 1rem;
 }

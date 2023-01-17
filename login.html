@@ -22,40 +22,27 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha">
                 <button type="submit">Acessar</button>
-                <a href="#" id="esquecisenha">Esqueci meu código de acesso/senha</a>
+                <a href="#esqueceukkkk" id="esquecisenha">Esqueci meu código de acesso/senha</a>
             </form>
             <div id="recuperarconta">
-                <span>
-                    <button id="voltar">&lArr;</button>
-                    <h1>Login</h1>
-                </span>
-                <p>Por favor informe o email ou telefone registrado no ato de cadastro!</p>
-                <label for="recuperando">Email ou Telefone</label>
-                <input type="text" id="recuperando">
-                <button type="submit" id="enviar">Enviar</button>
+                <div>
+                    <form action="">
+                        <span>
+                            <button id="voltar">
+                                <img src="imagens/voltar-40.png" alt="">
+                            </button>
+                            <h1>Recuperar</h1>
+                        </span>
+                        <p id="mensagemhaha">Por favor informe o email ou telefone registrado no ato de cadastro!</p>
+                        <label for="recuperando">Email ou Telefone</label>
+                        <input type="email" id="recuperando">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <script>
-        document.getElementById('esquecisenha').addEventListener('click', esqueci)
-        document.querySelector('button#enviar').addEventListener('click', enviado)
-        document.getElementById('voltar').addEventListener('click', voltar)
-
-        function esqueci() {
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('recuperarconta').style.display = 'flex';
-        }
-
-        function voltar() {
-            document.getElementById('login').style.display = '';
-            document.getElementById('login').style.display = '';
-        }
-
-        function enviado() {
-            document.getElementById('voltar').style.display = 'inline';
-        }
-    
-    </script>
+    <script src="scripts/script-login.js"></script>
 </body>
 </html>

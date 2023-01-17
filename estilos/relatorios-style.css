@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.content {
+    display: grid;
+    grid-template-rows: 4.5rem 1fr;
+    gap: 2rem;
+}
+
+span {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid #1F1151;
+}
+
+span .voltar {
+    background-color: transparent;
+}
+
+span h1 {
+    font-size: 2.8rem;
+    align-self: center;
+}
+
+.container textarea {
+    width: 60vw;
+    height: 50vh;
+    padding: 1rem;
+}

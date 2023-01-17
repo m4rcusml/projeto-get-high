@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Get High</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/main-style.css">
+</head>
+<body onload="chamarMain()">
+    <nav class="menuarea">
+        <ul class="menu">
+            <li class="menuitem">
+                <button class="menubutton" id="main-button">
+                    <img src="imagens/icone-main.png">
+                    Main
+                </button>
+            </li>
+            <li class="menuitem">
+                <button class="menubutton" id="func-button">
+                    <img src="imagens/icone-funcionarios.png">
+                    Funcionários
+                </button>
+            </li>
+            <li class="menuitem">
+                <button class="menubutton" id="relat-button">
+                    <img src="imagens/icone-relatorios.png">
+                    Relatórios
+                </button>
+            </li>
+        </ul>
+        <a href="login.html" id="logoff">Log Off</a>
+    </nav>
+    <section class="content" id="main">
+        <h1>Main</h1>
+        <div class="container-main">
+            <div class="cadastro-area">
+                <ul>
+                    <li>
+                        <a href="#">Cadastrar pacote</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar viagem</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar hospedagem</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-area">
+                <h3>Pesquisar</h3>
+                <div class="search-options">
+                    <button class="search-button">Viagem</button>
+                    <button class="search-button">Hospedagem</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content" id="funcionarios">
+        <h1>Funcionários</h1>
+        <div class="container-main">
+            <div class="cadastro-area">
+                <ul>
+                    <li>
+                        <a href="#">Cadastrar fucionário</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-area">
+                <h3>Pesquisar</h3>
+                <form class="search-options">
+                    <p>Informe o nome ou o código de identificação</p>
+                    <input type="text" placeholder="Digite aqui">
+                    <button class="search-button">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="relatorios">
+        <h1>Relatórios</h1>
+        <div class="container-main">
+            <div class="cadastro-area">
+                <ul>
+                    <li>
+                        <a href="relatorio-mensal.html">Relatório mensal</a>
+                    </li>
+                    <li>
+                        <a href="relatorio-anual.html">Relatório anual</a>
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <script src="scripts/script-main.js"></script>
+</body>
+</html>
