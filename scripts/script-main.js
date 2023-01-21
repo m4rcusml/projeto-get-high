@@ -40,3 +40,5 @@ function chamarFunc() {
     relat.style.display = 'none'
     main.style.display = 'none'
 }
+
+alert('Oi rs, eu avancei nos estudos de HTML, CSS e JavaScript e vim deixar um aviso: não estude o código desse projeto do jeito que ele está atualmente, pode estar funcionando e tudo mais porém me dá nojo só de imaginar como o html e o javascript estão bagunçados. Um dia irei refazê-los, mas por enquanto vai ficar assim. Obrigado.')
